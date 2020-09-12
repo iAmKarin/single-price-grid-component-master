@@ -111,6 +111,7 @@ main {
 .subscription {
   background: var(--cyan);
   padding: 24px;
+  overflow: hidden;
 }
 @media screen and (min-width: 376px) {
   .subscription {
