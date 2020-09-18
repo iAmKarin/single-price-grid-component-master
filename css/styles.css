@@ -32,12 +32,6 @@ body {
   font-weight: 400;
   margin: 32px;
 }
-@media screen and (min-width: 376px) {
-  body {
-    justify-content: center;
-    margin: 0;
-  }
-}
 
 main {
   margin-top: 40px;
@@ -46,38 +40,19 @@ main {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 376px) {
-  main {
-    max-width: 635px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 0;
-  }
-}
+
 .community {
   border-radius: 5px 5px 0 0;
   padding: 28px 24px 24px 32px;
   background: var(--white);
 }
-@media screen and (min-width: 376px) {
-  .community {
-    flex: 0 0 100%;
-    padding: 40px;
-    border-radius: 8px 8px 0 0;
-  }
-}
+
 .community > h1 {
   color: var(--cyan);
   font-size: 20px;
   letter-spacing: -0.25px;
 }
-@media screen and (min-width: 376px) {
-  .community > h1 {
-    font-weight: 700;
-    font-size: 24px;
-    letter-spacing: -0.3px;
-  }
-}
+
 .community > h2 {
   margin-top: 23px;
   font-weight: 700;
@@ -86,13 +61,7 @@ main {
   line-height: 20px;
   color: var(--brightYellow);
 }
-@media screen and (min-width: 376px) {
-  .community > h2 {
-    margin-top: 24px;
-    font-size: 18px;
-    letter-spacing: -0.23px;
-  }
-}
+
 .community > p {
   margin-top: 16px;
   font-size: 14px;
@@ -100,26 +69,13 @@ main {
   line-height: 26px;
   color: var(--grayischBlue);
 }
-@media screen and (min-width: 376px) {
-  .community > p {
-    margin-top: 10px;
-    font-size: 16px;
-    letter-spacing: -0.2px;
-  }
-}
 
 .subscription {
   background: var(--cyan);
   padding: 24px;
   overflow: hidden;
 }
-@media screen and (min-width: 376px) {
-  .subscription {
-    flex: 0 0 50%;
-    padding: 40px 40px 39px 40px;
-    border-radius: 0 0 0 5px;
-  }
-}
+
 .subscription > h2 {
   font-weight: 700;
   font-size: 18px;
@@ -167,13 +123,7 @@ main {
   padding: 24px;
   border-radius: 0 0 5px 5px;
 }
-@media screen and (min-width: 376px) {
-  .why {
-    flex: 0 0 50%;
-    padding: 40px;
-    border-radius: 0 0 5px 0;
-  }
-}
+
 .why > h2 {
   font-weight: 700;
   font-size: 18px;
@@ -188,4 +138,47 @@ main {
   font-size: 14px;
   letter-spacing: -0.18px;
   line-height: 20px;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    justify-content: center;
+    margin: 0;
+  }
+  main {
+    max-width: 635px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .community {
+    flex: 0 0 100%;
+    padding: 40px;
+    border-radius: 8px 8px 0 0;
+  }
+  .community > h1 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.3px;
+  }
+  .community > h2 {
+    margin-top: 24px;
+    font-size: 18px;
+    letter-spacing: -0.23px;
+  }
+  .community > p {
+    margin-top: 10px;
+    font-size: 16px;
+    letter-spacing: -0.2px;
+  }
+  .subscription {
+    flex: 0 0 50%;
+    padding: 40px 40px 39px 40px;
+    border-radius: 0 0 0 5px;
+  }
+  .why {
+    flex: 0 0 50%;
+    padding: 40px;
+    border-radius: 0 0 5px 0;
+  }
 }
